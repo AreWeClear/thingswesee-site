@@ -58,3 +58,15 @@ footer.site a { color: var(--muted); }
   h1 { font-size: 28px; }
   .lead { font-size: 18px; }
 }
+
+/* Password screen (see gate.js) */
+html.locked body > :not(#gate) { display: none !important; }
+#gate { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+#gate form { width: 100%; max-width: 320px; text-align: center; }
+#gate h1 { font-size: 28px; margin: 14px 0 24px; }
+#gate label { display: block; text-align: left; font-size: 15px; color: var(--muted); margin-bottom: 6px; }
+#gate input { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--text); }
+#gate input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+#gate button { width: 100%; margin-top: 12px; font: inherit; font-weight: 600; padding: 12px; border: 0; border-radius: 12px; background: var(--accent); color: var(--bg); cursor: pointer; }
+#gate .gate-msg { min-height: 1.5em; color: #c0392b; font-size: 15px; margin: 12px 0 0; }
+@media (prefers-color-scheme: dark) { #gate .gate-msg { color: #ff8a80; } }

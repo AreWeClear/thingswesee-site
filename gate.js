@@ -2,7 +2,7 @@
 // Not real security: it only keeps casual visitors out.
 // To remove it: delete this file, the <script> lines in each page, and the "locked" CSS in style.css.
 (function () {
-  var HASH = "cd261b2e969841b9428ccf3e0e0ca32abfc59057b1fc566185c523885a10791f";
+  var HASH = "f3054bb0aca8be0fe6375b54b0f626cc97a29a726a2591e7802590998cf8e9e8";
   var KEY = "tws-gate";
   var root = document.documentElement;
 
